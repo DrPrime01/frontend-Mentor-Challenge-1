@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -15,25 +19,60 @@
   </style>
 </head>
 <body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <header>
+    <div id="dropdown-icon">
+      <img src="/images/icon-menu.svg" alt="menu">
+    </div>
+    <a class="nav-logo" href="#"><img src="/images/logo.svg" alt="web logo"></a>
+    <nav>   
+      <div id="nav-bar">
+        <a class="nav-link" href="#">Features <img src="/images/icon-arrow-down.svg"></a>
+          <div id="features-dropdown" class="dropdown">
+            <a class="features-dropdown-link" href="#"><img src="/images/icon-todo.svg"> Todo List</a>
+            <a class="features-dropdown-link" href="#"><img src="/images/icon-calendar.svg" alt=""> Calendar</a>
+            <a class="features-dropdown-link" href="#"><img src="/images/icon-reminders.svg" alt=""> Reminders</a>
+            <a class="features-dropdown-link" href="#"><img src="/images/icon-planning.svg" alt=""> Planning</a>
+          </div>
+        <a class="nav-link" href="#">Company <img src="/images/icon-arrow-down.svg"></a>
+          <div id="company-dropdown" class="dropdown">
+            <a class="company-dropdown-link" href="#">History</a>
+            <a class="company-dropdown-link" href="#">Our Team</a>
+            <a class="company-dropdown-link" href="#">Blog</a>
+          </div>
+        <a class="nav-link" href="#">Careers</a>
+        <a class="nav-link" href="#">About</a>
+      </div>
+      <div id="nav-btn">
+        <button id="login">Login</button>
+        <button id="register">Register</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="flex-container">
+      <div class="container" id="container-text">
+        <span id="heading"><h1>Make <br>remote work</h1></span>
+        <span id="paragraph"><p>Get your team in sync, no matter your location. <br>Streamline processes, 
+          create team rituals, and <br>watch productivity soar.</p></span>
+        <span><button>Learn more</button></span>
+        <div id="sponsors">
+          <img src="/images/client-databiz.svg" alt="client-databiz logo">
+          <img src="/images/client-audiophile.svg" alt="client-audiophile logo">
+          <img src="/images/client-meet.svg" alt="meet logo">
+          <img src="/images/client-maker.svg" alt="maker logo">
+        </div>
+      </div>
+      <div class="container" id="container-hero">
+        <img id="container-img" src="/images/image-hero-desktop.png" alt="image-hero-desktop">
+      </div> 
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Dr Prime</a>.
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

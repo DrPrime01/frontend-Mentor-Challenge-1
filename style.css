@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 30px;
+    padding: 2em;
+    max-height: 100vh;
+    font-family: 'Epilogue', sans-serif;
+    margin: 0;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.dropdown, #dropdown-icon {
+    display: none;
+}
+
+nav, nav>div {
+    display: inline;   
+}
+
+#nav-btn {
+    float: right;
+}
+
+nav a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    margin-right: 25px;
+    vertical-align: super;
+}
+.nav-logo {
+    margin-right: 20px;
+}
+#nav-bar {
+    vertical-align: super;
+}
+
+#nav-btn > button{
+    vertical-align: super;
+}
+
+#nav-btn > button:first-child {
+    margin-right: 20px;
+}
+
+#login {
+    background: none;
+    border: none;
+    color: hsl(0, 0%, 41%);
+}
+#register {
+    background: none;
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+    padding: 10px;
+    color: hsl(0, 0%, 41%);
+}
+main {
+    height: 600px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0 100px 0;
+    justify-content: space-around;
+    height: 580px;
+    
+}
+footer {
+    height: 50px;
+}
+.attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+#container-img {
+    width: 450px;
+    height: auto;
+}
+
+#heading>h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin: 15px;
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 8%);
+}
+#paragraph>p {
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+    margin: 15px;
+    margin-bottom: 30px;
+}
+
+span>button {
+    background: hsl(0, 0%, 8%);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    color: hsl(0, 0%, 98%);
+    margin: 15px;
+    margin-bottom: 60px;
+}
+
+#container-text {
+    margin: 0;
+    padding: 20px;
+    height: fit-content;
+}
+
+#container-hero {
+    position: relative;
+    top: -100px;
+    margin: 20px;
+    padding: 20px;
+    height: auto;
+}
+#container-hero>img {
+    vertical-align: middle;
+}
+
+#sponsors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 375px) {
+    #dropdown-icon {
+        display: block;
+        float: right;
+    }
+    nav, .dropdown, #nav-bar a {
+        display: block;
+    }
+    #nav-bar a {
+        padding: 0.5em;
+    }
+    nav {
+        height: 100%;
+        width: 60%;
+        position: absolute;
+        background-color: hsl(0, 0%, 98%);
+        top: 4em;
+        z-index: 1;
+        right: 0;
+        display: block;
+    }
+    .dropdown a, #nav-btn button {
+        display: block;
+    }
+    #nav-btn button {
+        display: block;
+        width: 85%;
+        text-align: center;
+        font-size: 17px;
+    }
+    #login {
+        margin-bottom: 1em;
+    }
+
+    #nav-btn {
+        float: none;
+        margin: 50px;
+        height: 100%;
+        width: auto;
+    }
+    .dropdown {
+        position: relative;
+        left: 1em;
+    }
+
+    .flex-container {
+        flex-direction: column-reverse;
+        position: relative;
+        
+    }
+    body {
+        max-height: 100vh;
+    }
+    main {
+        height: auto;
+    }
+}
