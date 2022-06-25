@@ -10,7 +10,8 @@ body {
     max-height: 100vh;
     font-family: 'Epilogue', sans-serif;
     margin: 0;
-    background-color: hsl(0, 0%, 98%);
+    background-color: hsla(0, 0%, 98%);
+    min-height: 100vh;
 }
 
 .dropdown, #dropdown-icon {
@@ -70,6 +71,16 @@ main {
     height: 580px;
     
 }
+
+#hero-img {
+    background-image: url("/images/image-hero-desktop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50rem;
+    width: auto;
+}
+
 footer {
     height: 50px;
 }
@@ -78,10 +89,6 @@ footer {
     justify-content: center;
     align-items: center;
     height: 50px;
-}
-#container-img {
-    width: 450px;
-    height: auto;
 }
 
 #heading>h1 {
@@ -97,6 +104,7 @@ footer {
     color: hsl(0, 0%, 41%);
     margin: 15px;
     margin-bottom: 30px;
+    line-height: 24px;
 }
 
 span>button {
@@ -114,15 +122,18 @@ span>button {
     padding: 20px;
     height: fit-content;
 }
-
+.text {
+    display: block;
+}
 #container-hero {
     position: relative;
-    top: -100px;
+    top: -220px;
     margin: 20px;
     padding: 20px;
     height: auto;
+    width: 29rem;
 }
-#container-hero>img {
+#container-hero>#hero-img {
     vertical-align: middle;
 }
 
@@ -134,28 +145,40 @@ span>button {
 }
 
 
-@media screen and (max-width: 375px) {
+@media only screen and (max-device-width: 480px) {
     #dropdown-icon {
         display: block;
         float: right;
     }
-    nav, .dropdown, #nav-bar a {
+   .dropdown {
+        display: none;
+        position: relative;
+        left: 1em;
+    }
+  
+    .dropdown a {
+        display: inline-block;
+        width: 100%;
+        margin: 15px 0;
+    }
+  
+    #nav-bar>a {
+        padding: 0.7em;
         display: block;
     }
-    #nav-bar a {
-        padding: 0.5em;
-    }
+
+
     nav {
         height: 100%;
         width: 60%;
         position: absolute;
         background-color: hsl(0, 0%, 98%);
-        top: 4em;
         z-index: 1;
         right: 0;
-        display: block;
+        display: none;
+        padding: 10px;
     }
-    .dropdown a, #nav-btn button {
+    .show {
         display: block;
     }
     #nav-btn button {
@@ -169,25 +192,75 @@ span>button {
     }
 
     #nav-btn {
-        float: none;
-        margin: 50px;
-        height: 100%;
-        width: auto;
-    }
-    .dropdown {
-        position: relative;
-        left: 1em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
     }
 
     .flex-container {
         flex-direction: column-reverse;
         position: relative;
-        
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0 25px 0;
     }
     body {
         max-height: 100vh;
+        margin: 1.5rem;
+        padding: 0;
     }
     main {
         height: auto;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: 650px;
+    }
+    #hero-img {
+        background-image: url("/images/image-hero-mobile.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 250px;
+        width: auto;
+    }
+    #container-hero {
+        top: -30px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    #container-text {
+        margin-top: 25px;
+        text-align: center;
+        margin: 0;
+    }
+    #heading>h1 {
+        font-size: 30px;
+        font-weight: 700;
+        width: 330px;
+        margin: 0;
+        padding: 0 0 10px 0;
+    }
+    .text {
+        display: inline;
+    }
+    footer {
+        height: 25px;
+    }
+    .attribution {
+        height: 25px;
+    }
+    #paragraph>p {
+        margin: 10px 0;
+    }
+    #sponsors {
+        justify-content: space-between;
+    }
+    #sponsors img {
+        height: 1.1em;
+        width: auto;
     }
 }

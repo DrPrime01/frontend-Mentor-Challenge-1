@@ -20,20 +20,20 @@
 </head>
 <body>
   <header>
-    <div id="dropdown-icon">
-      <img src="/images/icon-menu.svg" alt="menu">
-    </div>
     <a class="nav-logo" href="#"><img src="/images/logo.svg" alt="web logo"></a>
+    <div id="dropdown-icon">
+      <img src="/images/icon-menu.svg" alt="menu" id="menu-icon">
+    </div>
     <nav>   
       <div id="nav-bar">
-        <a class="nav-link" href="#">Features <img src="/images/icon-arrow-down.svg"></a>
+        <a class="nav-link" href="#" id="features">Features <img src="/images/icon-arrow-down.svg" class="arrow-down" id="arrow-down-feat"></a>
           <div id="features-dropdown" class="dropdown">
             <a class="features-dropdown-link" href="#"><img src="/images/icon-todo.svg"> Todo List</a>
             <a class="features-dropdown-link" href="#"><img src="/images/icon-calendar.svg" alt=""> Calendar</a>
             <a class="features-dropdown-link" href="#"><img src="/images/icon-reminders.svg" alt=""> Reminders</a>
             <a class="features-dropdown-link" href="#"><img src="/images/icon-planning.svg" alt=""> Planning</a>
           </div>
-        <a class="nav-link" href="#">Company <img src="/images/icon-arrow-down.svg"></a>
+        <a class="nav-link" href="#" id="company">Company <img src="/images/icon-arrow-down.svg" class="arrow-down" id="arrow-down-company"></a>
           <div id="company-dropdown" class="dropdown">
             <a class="company-dropdown-link" href="#">History</a>
             <a class="company-dropdown-link" href="#">Our Team</a>
@@ -46,14 +46,13 @@
         <button id="login">Login</button>
         <button id="register">Register</button>
       </div>
-    </nav>
+    </nav> 
   </header>
   <main>
     <div class="flex-container">
       <div class="container" id="container-text">
-        <span id="heading"><h1>Make <br>remote work</h1></span>
-        <span id="paragraph"><p>Get your team in sync, no matter your location. <br>Streamline processes, 
-          create team rituals, and <br>watch productivity soar.</p></span>
+        <span id="heading"><h1><span class="text">Make </span>remote work</h1></span>
+        <span id="paragraph"><p><span class="text">Get your team in sync, no matter your location. </span><span class="text">Streamline processes, create team rituals, and </span><span class="text">watch productivity soar.</span></p></span>
         <span><button>Learn more</button></span>
         <div id="sponsors">
           <img src="/images/client-databiz.svg" alt="client-databiz logo">
@@ -63,7 +62,9 @@
         </div>
       </div>
       <div class="container" id="container-hero">
-        <img id="container-img" src="/images/image-hero-desktop.png" alt="image-hero-desktop">
+        <div id="hero-img">
+
+        </div>
       </div> 
     </div>
   </main>
