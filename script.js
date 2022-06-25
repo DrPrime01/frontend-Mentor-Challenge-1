@@ -7,9 +7,9 @@ menuBar.addEventListener("click", function() {
     nav.classList.toggle("show")
     let menuIcon = document.querySelector("#menu-icon")
     if (nav.classList.contains("show")) {
-        menuIcon.setAttribute("src", "/images/icon-close-menu.svg")
+        menuIcon.setAttribute("src", "./images/icon-close-menu.svg")
     } else {
-        menuIcon.setAttribute("src", "/images/icon-menu.svg")
+        menuIcon.setAttribute("src", "./images/icon-menu.svg")
     }
 })
 
@@ -24,9 +24,9 @@ company.addEventListener("click", function (){
     companyDropdown.classList.toggle("show");
     let arrowDownCompany = document.querySelector("#arrow-down-company");
     if (companyDropdown.classList.contains("show")) {
-        arrowDownCompany.setAttribute("src", "/images/icon-arrow-up.svg")
+        arrowDownCompany.setAttribute("src", "./images/icon-arrow-up.svg")
     } else {
-        arrowDownCompany.setAttribute("src", "/images/icon-arrow-down.svg")
+        arrowDownCompany.setAttribute("src", "./images/icon-arrow-down.svg")
     }
 })
 
@@ -34,9 +34,9 @@ features.addEventListener("click", function (){
     featuresDropdown.classList.toggle("show");
     let arrowDownFeat = document.querySelector("#arrow-down-feat");
     if (featuresDropdown.classList.contains("show")) {
-        arrowDownFeat.setAttribute("src", "/images/icon-arrow-up.svg")
+        arrowDownFeat.setAttribute("src", "./images/icon-arrow-up.svg")
     } else {
-        arrowDownFeat.setAttribute("src", "/images/icon-arrow-down.svg")
+        arrowDownFeat.setAttribute("src", "./images/icon-arrow-down.svg")
     }
 })
 
