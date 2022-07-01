@@ -14,8 +14,43 @@ body {
     min-height: 100vh;
 }
 
-.dropdown, #dropdown-icon {
+#dropdown-icon {
     display: none;
+}
+
+header {
+    display: inline;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    box-shadow: 5px 5px 5px 2px rgb(58, 55, 55);
+    width: 10rem;
+    padding: 10px;
+    background-color: hsl(0, 0%, 95%);
+    z-index: 1;
+}
+
+ .show {
+        display: block;
+    }
+
+#company-dropdown {
+    left: 12em;
+}
+.dropdown a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 3px;  
+    margin: 5px 0;
+}
+
+.dropdown a:hover {
+    background-color: hsl(0, 4%, 24%);
+    color: hsl(0, 0%, 98%);
 }
 
 nav, nav>div {
@@ -36,8 +71,15 @@ nav a {
     margin-right: 20px;
 }
 #nav-bar {
-    vertical-align: super;
+    display: inline-block;
+    position: absolute;
+    padding: 0 30px;
+    width: 100%;
 }
+ #nav-bar > a {
+    padding: 14px 16px;
+} 
+
 
 #nav-btn > button{
     vertical-align: super;
@@ -154,12 +196,22 @@ span>button {
         display: none;
         position: relative;
         left: 1em;
+        top: 0;
+        box-shadow: none;
+        padding: 0;
+        background: none;
+        z-index: 0;
     }
-  
+    #company-dropdown {
+        left: 1em;
+    }
+    
     .dropdown a {
         display: inline-block;
         width: 100%;
         margin: 15px 0;
+        padding: 5px 3px;
+        margin: 5px;
     }
   
     #nav-bar>a {
@@ -181,6 +233,11 @@ span>button {
     .show {
         display: block;
     }
+
+    #nav-bar {
+        position: relative;
+    }
+
     #nav-btn button {
         display: block;
         width: 85%;
