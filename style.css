@@ -12,6 +12,7 @@ body {
     margin: 0;
     background-color: hsla(0, 0%, 98%);
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 #dropdown-icon {
@@ -268,6 +269,7 @@ span>button {
         max-height: 100vh;
         margin: 1.5rem;
         padding: 0;
+        overflow-x: hidden;
     }
     main {
         height: auto;
